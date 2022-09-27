@@ -1,0 +1,15 @@
+*Session.save():
+   save() method saves the transient entity.
+   save(Object object) : Accepts instance of Entity to save.
+   save(String entityName, Object object) : Accepts entity name and instance of entity.
+
+*Session.update()
+   update() method updates the entity for persistence using the identifier of detached object or new instance of entity created with existing identifier.
+   update(Object object) : Accepts the instance of new entity or any detached object from the session.
+   update(String entityName, Object object) : Accepts the entity name and instance of object.
+
+*Session.saveOrUpdate()
+     saveOrUpdate() method of Session class works as save() or update() method. First hibernate checks the existence of instance of entity and if not available then inserts the data into database and if available then updates the data.
+     saveOrUpdate(Object object): Accepts the instance of new entity or any detached object from the session to save or update.
+     saveOrUpdate(String entityName, Object object): Accepts the entity name and instance of object.
+     

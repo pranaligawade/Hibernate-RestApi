@@ -1,0 +1,29 @@
+* HOW TO CONFIGURE HIBERNATE FILE: hibernate.cfg.xml
+
+* CONFIGURATION FILE  WITH ANNOTATION
+
+* BASIC ANNOTATION: -address,empaddress
+* SAVE DATA (INSERT , SELECT) TO DB:SETTING VALUES USING SETTER, CONSTRUCTOR.
+     -test,emptestjava files
+* FETCHING DATA: - fetchdemo,empfetchingdatademo
+     LOAD,GET
+
+* EXAMAPLES:
+1]
+EMP: EMPADRESS,EMPTEST,EMPFETCHINGDATADEMO
+2]
+STUDENT:ADRESS,TEST,FETCHDEMO
+
+
+
+*  NO XML:- org.NOXMLExample: AnnotationConfigApplicationContext
+ @Configuration
+ @Value:    @Value("${foo.team}")
+ @Autowired
+ @Qualifier
+ @Component
+ @Bean
+ @PropertySource("classpath:sport.properties")
+bean life cycles method:
+   @PostConstruct:method-   public void doMyStartupStuff() -init
+   @PreDestroy:method- public void doMyCleanupStuff()-distroy
